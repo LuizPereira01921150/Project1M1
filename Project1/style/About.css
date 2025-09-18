@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0e9999;
+    color:black;
+}
+
+
+/*--------Welcome----------------------------------------------------------------------------------*/
+#Welcome{
+    width:100%;
+    height:700px;
+    background-image: url('/assets/backgroundipsum.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px; /*so it doesnt overlap navbar*/
+}
+
+.Container-Welcome{
+    padding: 5px 3%;
+    display: inline-block;
+}
+
+.Welcome-Text{
+    font-size: 50px;
+    line-height: 1.4;
+    color: #12886a;
+    font-family: "Libre Caslon Display", serif;
+}
+
+.Welcome-Text h1{
+    margin-top: 50px;
+    font-size: 75px;
+    overflow: hidden;
+    text-shadow: 
+        -2px -2px 0 #063a2d, /* Top left */
+        -1px 2px 0 #063a2d;  /* Bottom left */
+}
+
+.Welcome-Text h2{
+    margin-left: 1px;
+    font-size: 40px;
+    overflow: hidden;
+}
+
+.Welcome-Text h3{
+    margin-top: 50px;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+/*-------AboutMe-----------------------------------------------------------------------------------*/
+#AboutMe{
+    padding: 80px 0;
+    color: #000000;
+    background-color: #063a2d;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Column1-AboutMe{
+    flex-basis: 35%;
+}
+
+.Column2-AboutMe{
+    flex-basis: 60%;
+}
+
+.Presentation{
+    font-size: 30px;
+}
+
+.Picture-AboutMe{
+    margin-left: 25%;
+    width: 300px;
+    height: 450px;
+    background-color: #12886a;
+    border-radius: 15px;
+}
+
+/*-------Skills------------------------------------------------------------------------------------*/
+#Skills{
+    height:500px;
+}
+.Container-Skills h1{
+    margin-top: 50px;
+    font-size: 75px;
+    overflow: hidden;
+}
+
+.Grid-Skills{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 50px 50px;
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+.SpecificSkill{
+    font-size: 30px;
+}
+
+/*-------Timeline----------------------------------------------------------------------------------*/
+.Timeline {
+  background-color: #063a2d;
+  position: relative;
+  margin: 0 auto;
+}
+
+.Timeline h1{
+    margin-top: 50px;
+    font-size: 75px;
+    overflow: hidden;
+}
+
+.Item{
+    padding-top: 20px;
+    padding-left: 20px;
+}

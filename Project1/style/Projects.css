@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0e9999;
+    color:black;
+}
+/*-------Projects----------------------------------------------------------------------------------*/
+#Projects{
+    padding-top: 100px; /*so it doesnt overlap navbar*/
+}
+
+.Page-Title{
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+.Grid-Projects{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 50px 50px;
+  padding-left: 100px;
+  padding-top: 50px;
+  list-style: none;
+}
