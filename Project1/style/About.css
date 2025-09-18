@@ -15,7 +15,7 @@ body{
 #Welcome{
     width:100%;
     height:700px;
-    background-image: url('/assets/backgroundipsum.jpg');
+    background-image: url('../assets/backgroundipsum.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
