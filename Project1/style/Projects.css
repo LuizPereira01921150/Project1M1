@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #0e9999;
+    background-image: url(../assets/backgroundStars.png);
     color:black;
 }
 /*-------Projects----------------------------------------------------------------------------------*/
@@ -23,7 +23,68 @@ body{
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 50px 50px;
-  padding-left: 100px;
+  padding-left: 20px;
   padding-top: 50px;
   list-style: none;
+}
+
+.List-Projects{
+    background: linear-gradient(135deg, #00ffbf, #008cff);
+    margin-right: 20px;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*wow feature*/
+}
+
+.List-Projects figure {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;   
+  margin: 0;
+  padding-top: 15px;
+}
+
+.List-Projects figure img {
+  max-width: 80%;            
+  height: auto;
+  display: block;
+}
+
+.List-Projects a{
+    text-decoration: none;
+    color:inherit;
+    display: block;
+}
+
+.Description-Projects{
+    padding: 10px;
+}
+
+.Title-Projects{
+    padding-left: 10px;
+    padding-top:10px;
+    text-align: center;
+}
+
+/*wow feature*/
+.List-Projects:hover {
+  transform: translateY(-10px);
+  animation: glow 3s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 40px #00ffbf;
+  }
+  25% {
+    box-shadow: 0 0 40px #00ff37;
+  }
+  50% {
+    box-shadow: 0 0 40px #fff200;
+  }
+  75% {
+    box-shadow: 0 0 40px #fa0202;
+  }
+  100% {
+    box-shadow: 0 0 40px #00ffbf;
+  }
 }

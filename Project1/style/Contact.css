@@ -6,30 +6,51 @@
 }
 
 body{
-    background: #0e9999;
+    background-image: url(../assets/backgroundStars.png);
     color:black;
 }
-/*-------Resume------------------------------------------------------------------------------------*/
-#Resume{
+
+/*-------SocialMedia-------------------------------------------------------------------------------*/
+.SocialMedia {
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 
-#Resume h1{
-    font-size: 50px;
-    margin-bottom: 50px;
-
+.icons-list{
+    display: flex;
+    gap: 50px;              
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+.icons{
+    height: 50px;
+    width: 50px;
+}
+
+/*-------Resume------------------------------------------------------------------------------------*/
 
 .PDF-Resume{
-  display: flex;
-  justify-content: center; 
-  align-items: center;
+    width: 100%;
+    height: 1200px;
+}
+
+.PDF-Resume iframe{
+    width: 100%;
+    height: 100%;
+    border:none;
 }
 
 /*-------ContactMe---------------------------------------------------------------------------------*/
-.contact{
-    width: 50%;
+.Contact{
+    flex: 1;
 }
+
+
 form input, form textarea{
     width: 100%;
     border: 0;
@@ -51,10 +72,4 @@ form input, form textarea{
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-}
-
-
-.contact h1{
-    font-size: 50px;
-    padding-top: 25px;
 }

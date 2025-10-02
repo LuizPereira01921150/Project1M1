@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #0e9999;
+    background: #000000;
     color:black;
 }
 
@@ -15,7 +15,7 @@ body{
 #Welcome{
     width:100%;
     height:700px;
-    background-image: url('../assets/backgroundipsum.jpg');
+    background-image: url('../assets/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,28 +30,20 @@ body{
 .Welcome-Text{
     font-size: 50px;
     line-height: 1.4;
-    color: #12886a;
+    color: #00ffbf;
     font-family: "Libre Caslon Display", serif;
 }
 
 .Welcome-Text h1{
-    margin-top: 50px;
-    font-size: 75px;
+    font-size: 125px;
     overflow: hidden;
     text-shadow: 
-        -2px -2px 0 #063a2d, /* Top left */
+        -2px -2px 0 #032f24, /* Top left */
         -1px 2px 0 #063a2d;  /* Bottom left */
 }
 
 .Welcome-Text h2{
-    margin-left: 1px;
     font-size: 40px;
-    overflow: hidden;
-}
-
-.Welcome-Text h3{
-    margin-top: 50px;
-    font-size: 25px;
     overflow: hidden;
 }
 
@@ -59,7 +51,7 @@ body{
 #AboutMe{
     padding: 80px 0;
     color: #000000;
-    background-color: #063a2d;
+    background-image: url(../assets/backgroundStars.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,56 +71,169 @@ body{
     flex-basis: 60%;
 }
 
+.subtitle{
+  color: #00ffbf;
+  text-decoration: underline;
+  margin-top: 115px;
+  margin-bottom: 40px;
+}
+
 .Presentation{
     font-size: 30px;
+    color: #00ffbf;
 }
 
 .Picture-AboutMe{
     margin-left: 25%;
     width: 300px;
-    height: 450px;
-    background-color: #12886a;
     border-radius: 15px;
 }
 
+
+
 /*-------Skills------------------------------------------------------------------------------------*/
-#Skills{
-    height:500px;
-}
-.Container-Skills h1{
-    margin-top: 50px;
-    font-size: 75px;
-    overflow: hidden;
+.skills{
+  padding: 30px 0;
+  background-image: url(../assets/backgroundStars.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.Grid-Skills{
+.skills-list{
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  gap: 50px 50px;
-  list-style-type: disc;
-  list-style-position: inside;
-  padding-left: 100px;
-  padding-top: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 40px;
+  margin-top: 50px;
 }
 
-.SpecificSkill{
-    font-size: 30px;
+.skills-list div{
+  background: linear-gradient(135deg, #00ffbf, #008cff);
+  padding: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 25px;
 }
+
 
 /*-------Timeline----------------------------------------------------------------------------------*/
-.Timeline {
-  background-color: #063a2d;
+
+.timeline {
   position: relative;
-  margin: 0 auto;
+  width: 100%;           /* full width of viewport */
+  max-width: none;       /* remove max-width restriction */
+  margin: 0;             /* no centering needed */
+  background-image: url('../assets/backgroundStars.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.Timeline h1{
-    margin-top: 50px;
-    font-size: 75px;
-    overflow: hidden;
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
 }
 
-.Item{
-    padding-top: 20px;
-    padding-left: 20px;
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+
+.right {
+  left: 50%;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
 }
