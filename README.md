@@ -1,4 +1,4 @@
-Current in: Milestone 2:Status Update.
+Currently in --> Milestone 2:Status Update.
 
 to see pages go to "pages" folder.
 
