@@ -59,13 +59,15 @@
     <!-------Resume------------------------------------------------------------------------------------->
         <div class="Resume">
             <div class="PDF-Resume">
-                <iframe src="../assets/Resumeipsum.pdf" frameborder="0"></iframe>
+                <iframe src="../assets/Resume.pdf" frameborder="0"></iframe>
             </div>
         </div>
 
     <!-------Contact-------------------------------------------------------------------------------------> 
         <div class="Contact">
-            <form>
+            <h1> Contact me</h1>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="e798bcba-f9f1-4735-8c31-4c775d94c77b">
                 <input type="text" name="Name" placeholder="Your Name" required>
                 <input type="email" name="Email" placeholder="Your Email" required>
                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
