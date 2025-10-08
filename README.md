@@ -1,4 +1,5 @@
 Currently in --> Milestone 3: Final Product & report
+
 to see website go to https://luizpereira01921150.github.io/Project1M1/
 
 purpose: show people a bit about who I am and what projects I have done. Also, I want to provide users a way to contact me if they wish to do so.
