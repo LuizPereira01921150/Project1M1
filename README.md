@@ -9,3 +9,5 @@ Structure:
   Home -> page with information about who I am, where I'm from, what my skills are and my timeline.
   Projects -> a page with all the projects i've done.
   contact -> a page with my resume and ways to contact me.
+
+if for some reason something doesnt load use ctrl+shift+R to force a "hard refresh" and force the browser to ignore its cache and download all page assets from the server
